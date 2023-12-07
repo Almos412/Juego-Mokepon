@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+body{
+    background-image: url(Image/Carta.webp);
+    background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	text-align: center;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.titulo1{
+    color: midnightblue;
+    width: 347px;
+    height: 36px;
+    border: outset;
+    background: repeating-linear-gradient(25deg,gold, white 60px);
+    font-size: 30px;
+}
+
+.titulo{
+    color: midnightblue;
+    width: 208px;
+    height: 33px;
+    border: outset;
+    background: repeating-linear-gradient(25deg,gold, white 60px);
+    font-size: 30px;
+}
+
+.elige{
+    width: 291px;
+    height: 51px;
+    background: repeating-linear-gradient(45deg, silver, white 99px);
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 10px;
+    border: 3px solid gray;
+    border-style: outset;
+}
+
+.tarjetas, .tarjetas-ataques, .contenedorMovimientos{
+    display: flex;
+    gap: 10px;
+
+}
+
+.tarjeta-de-mokepon{
+    width: 159px;
+    height: 79px;
+    background: repeating-linear-gradient(45deg, silver, white 99px);
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 10px;
+    border: 3px solid black;
+    border-style: double;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    
+    
+}
+.tarjeta-de-mokepon img{
+    width: 70px;
+}
+
+#seleccionar-mascota{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#boton-mascota{
+    width: 149px;
+    height: 30px;
+    background: repeating-linear-gradient(45deg,gray,white 62px);
+    border-width: thick;
+    border-radius: 20px;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-family: unset;
+    font-size: medium;
+    margin-left: 31px;
+    margin-top: 15px;
+}
+input{
+    display: none;
+}
+
+input:checked + label {
+    background: #113946;
+    color: white;
+
+
+}
+
+#seleccionar-ataque{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.boton-de-ataque{
+    font-family: 'Bebas Neue', sans-serif;
+    width: 81px;
+    height: 39px;
+    background: repeating-linear-gradient(45deg, silver, white 99px);
+    padding: 8px;
+    box-sizing: border-box;
+    margin: 10px;
+    border: 3px solid black;
+    border-radius: 20px;
+    border-style: groove;
+    flex-direction: row;
+    border-color: transparent;
+}
+
+.mensajes{
+    font-family: 'Bebas Neue', sans-serif;
+    width: 278px;
+    height: 39px;
+    background: repeating-linear-gradient(45deg, silver, white 99px);
+    padding: 8px;
+    box-sizing: border-box;
+    margin: 10px;
+    border: 3px solid black;
+    border-radius: 20px;
+    border-style: double;
+    flex-direction: row;
+    border-color: black;
+}
+
+#punto{
+    background: rgb(166, 162, 162);
+    border-style: solid;
+    border-color: black;
+    width: 230px;
+    border-radius: 25px;
+    margin: 7px;
+    display: flex;
+    height: 87px;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#pelea{
+margin-top: -5px;
+}
+
+#boton-reiniciar{
+    border-style: double;
+    color: darkblue;
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+    flex-wrap: nowrap;
+    margin: -12px;
+    margin-right: -2px;
+    flex-direction: column-reverse;
+    align-items: center;
+
+}
+
+.batalla{
+display: grid;
+grid-template-columns: 100px 100px;
+color: floralwhite;
+background: black;
+}
+
+.ajugador, .aenemigo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#ver-mapa{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#movimiento{
+    font-family: 'Bebas Neue', sans-serif;
+    width: 114px;
+    height: 47px;
+    background: repeating-linear-gradient(45deg, silver, white 99px);
+    padding: 8px;
+    box-sizing: border-box;
+    margin: 10px;
+    border: 3px solid black;
+    border-radius: 20px;
+    border-style: groove;
+    flex-direction: row;
+    border-color: transparent;
+}
+
+
+@media (max-width: 1100px){
+    .tarjetas, .tarjetas-ataques{
+    flex-direction: column;
+    }
+    #boton-mascota{
+        margin-left: -6px;
+    }
+}
+ @media (max-width: 400px){
+    .contenedorMovimientos{
+    flex-direction: row;
+        }
+ }

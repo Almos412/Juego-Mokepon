@@ -1,0 +1,73 @@
+   function eleccion (jugada){
+        let resultado = ""
+        if(jugada == 1) {
+        resultado = "Hipodoge"
+    } else if(jugada == 2) {
+        resultado = "Capipepo"
+    }else {
+        resultado = "Ratigueya"
+    }
+    return resultado
+}
+let spanMascotaEnemigo = document.getElementById ("mascota-enemigo")
+let enemigo = aleatorio (1,3)
+alert ("El enemigo seleccionó a " +eleccion(enemigo))
+spanMascotaEnemigo.innerHTML = eleccion(enemigo)
+
+//MOKEPON
+//<input type="radio" id="Langostelvis" name="mascota"/>
+//<label class= "tarjeta-de-mokepon" for="Langostelvis">Langostelvis</label>
+
+//<input type="radio" id="Tucapalma" name="mascota"/>
+//<label class= "tarjeta-de-mokepon" for="Tucapalma">Tucapalma</label>
+
+//<input type="radio" id="Pydos" name="mascota"/>
+//<label class= "tarjeta-de-mokepon" for="Pydos">Pydos</label>
+
+
+
+
+
+
+
+
+
+function tipos (){
+    if(mascotaJugadorTipo == 'Venenoso' && mascotaEnemigoTipo== 'Aereo' || mascotaJugadorTipo == 'Aereo' && mascotaEnemigoTipo == 'Roca' || mascotaJugadorTipo == 'Roca' && mascotaEnemigoTipo == 'Venenoso' ){
+    }
+ ataques = 
+}
+
+
+
+
+function pintarPersonaje(){
+    lienzo.clearRect (0, 0, mapa.width, mapa.height)
+    lienzo.drawImage(
+        Capipepo.mapaFoto, 
+        Capipepo.x, 
+        Capipepo.y, 
+        Capipepo.ancho, 
+        Capipepo.alto
+        )
+}
+
+function moverCapipepo (){
+    Capipepo.x = Capipepo.x + 5
+    pintarPersonaje ()
+}
+
+this.x = 20
+this.y = 30
+this.ancho = 80
+this.alto = 80
+this,mapaFoto = new Image()
+this.mapaFoto.src = foto
+
+let enemigo = aleatorio (0,mokepones.length - 1)
+mascotaEnemigo = mokepones [enemigo].nombre
+spanMascotaEnemigo.innerHTML= mascotaEnemigo
+mascotaEnemigoTipo = mokepones[enemigo].tipo
+ataquesMokeponEnemigo = mokepones[enemigo].ataques
+console.log(ataquesMokeponEnemigo)
+console.log (mascotaEnemigoTipo)
